@@ -11,7 +11,6 @@ Consigli del giorno:
 * Individuate gli elementi di cui avete bisogno per realizzare il programma.
 
 # SVOLGIMENTO DELL'ESERCIZIO:
-
 - Prendere gli elementi che mi servono dal dom.
 - Impostare un timer di 30 secondi all'apertura della pagina che si decrementi fino a zero.
 - Al raggiungimento dello zero stopparlo.
