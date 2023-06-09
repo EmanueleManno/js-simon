@@ -11,3 +11,12 @@ Consigli del giorno:
 * Individuate gli elementi di cui avete bisogno per realizzare il programma.
 
 # SVOLGIMENTO DELL'ESERCIZIO:
+
+- Prendere gli elementi che mi servono dal dom.
+- Impostare un timer di 30 secondi all'apertura della pagina che si decrementi fino a zero.
+- Al raggiungimento dello zero stopparlo.
+- Generare un array di 5 numeri casuali da 1 a 99.
+- Stamparli in pagina facendoli vedere all'utente.
+- Far scomparire i numeri al raggiungimento dello zero del timer.
+- Chiedere all'utente di inserire i numeri generati in precedenza.
+- Dire all'utente quanti e quali numeri ha indovinato.
