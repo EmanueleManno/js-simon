@@ -9,6 +9,32 @@ const simonSays = document.getElementById('simonsays');
 //SETTO IL TIMER DEI SECONDI A 30:
 let seconds = 5;
 
+//PREPARO IL MESSAGGIO DEL GIOCO:
+simonSays.innerText = 'Questi sono i numeri che devi memorizzare: ';
+
+//STAMPO IN PAGINA IL TIMER:
+timer.innerText = seconds;
+
+//PREPARO UNA LISTA VUOTA PER GENERARE I NUMERI:
+const numbers = [];
+
+//CICLO FOR PER LA GENERAZIONE DEI NUMERI:
+for (let i = 0; numbers.length < 5; i++) {
+
+//GENERO UN NUMERO CASUALE:
+const randomNumbers = Math.floor(Math.random() * 100) + 1;
+
+if (!numbers.includes(randomNumbers)) 
+//INSERISCO NELLA LISTA
+numbers.push(randomNumbers);
+
+//STAMPO IN CONSOLE:
+console.log(randomNumbers);
+
+//LI STAMPO NELLA PAGINA:
+numberBox.innerText = numbers;
+}
+
 //FUNZIONE PER IL TIMER:
 const countdown = setInterval (() => {
     //DECREMENTO IL CONTATORE:
