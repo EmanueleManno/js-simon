@@ -5,6 +5,8 @@ console.log('JS OK');
 const timer = document.getElementById('display');
 const numberBox = document.getElementById('numbers');
 const simonSays = document.getElementById('simonsays');
+const userInput = document.getElementById('userinput');
+const wasNumbers = document.getElementById('wasnumbers');
 
 //SETTO IL TIMER DEI SECONDI A 30:
 let seconds = 5;
@@ -17,6 +19,9 @@ timer.innerText = seconds;
 
 //PREPARO UNA LISTA VUOTA PER GENERARE I NUMERI:
 const numbers = [];
+
+//PREPARO UNA LISTA VUOTA PER RACCOGLIERE I NUMERI INSERITI DALL'UTENTE:
+const userListNumbers = [];
 
 //CICLO FOR PER LA GENERAZIONE DEI NUMERI:
 for (let i = 0; numbers.length < 5; i++) {
@@ -46,9 +51,24 @@ const countdown = setInterval (() => {
         //STOPPATI A ZERO E NON FUNZIONARE PIU':
         clearInterval(countdown);
         //FAI SPARIRE LA SCRITTA DEI NUMERI E DI SIMON SAYS:
-        simonSays.innerText = '';
+        simonSays.innerText = 'Indovina i numeri!';
         numberBox.innerText = '';
         //SPARO I CORIANDOLI:
         confetti ({particleCount: 1000, spread: 360})
     }
 }, 1000)
+
+//FUNZIONE PER L'INPUT
+const inputCountdown = setInterval (() => {
+    //DECREMENTO IL CONTATORE:
+    if (seconds === -1) {
+        //CHIEDERE ALL'UTENTE DI INSERIRE I NUMERI:
+        const userNumberInput = parseInt(prompt('Inserisci i numeri che ti ricordi'));
+        console.log(userNumberInput);
+        userInput.innerText = 'I numeri da te inseriti sono: ' + userNumberInput;
+        wasNumbers.innerText = 'I numeri che dovevi indovinare sono: ' + randomNumbers;
+    }
+}, 1000)
+
+
+
