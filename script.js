@@ -69,6 +69,3 @@ const inputCountdown = setInterval (() => {
         wasNumbers.innerText = 'I numeri che dovevi indovinare sono: ' + randomNumbers;
     }
 }, 1000)
-
-
-

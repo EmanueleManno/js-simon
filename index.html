@@ -10,7 +10,7 @@
     <!--Collegamento file CSS con HTML-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <!--Collegamento file JS con HTML-->
-    <script defer src="script.js"></script>
+    <script defer src="script-correzione.js"></script>
     <!--Importazione Confetti Canvas-->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <!--Libreria Bootstrap CSS-->
@@ -31,6 +31,18 @@
         <div id="userinput"></div>
         <!--Numeri che doveva indovinare-->
         <div id="wasnumbers"></div>
+
+        <!--Form per l'input-->
+        <form id="solutions-form" class="hidden">
+            <div>
+                <input type="number" min="1" max="100" step="1" id="num1">
+                <input type="number" min="1" max="100" step="1" id="num2">
+                <input type="number" min="1" max="100" step="1" id="num3">
+                <input type="number" min="1" max="100" step="1" id="num4">
+                <input type="number" min="1" max="100" step="1" id="num5">
+            </div>
+            <button>Conferma</button>
+        </form>
     </div>
 </body>
 </html>

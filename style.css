@@ -35,3 +35,13 @@ body {
     font-size: 35px;
     color: darkgreen;
 }
+
+/*LI*/
+li {
+    list-style-type: none;
+}
+
+/*FORM*/
+form {
+    padding: 5px;
+}
