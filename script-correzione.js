@@ -44,7 +44,7 @@ const inputs = document.querySelectorAll('input');
 const min = 1;
 const max = 100;
 const totalNumbers = 5;
-let time = 30;
+let time = 5;
 
 //GENERO NUMERI CASUALI:
 const numbers = generaNumeriCasuali(min, max, totalNumbers);
@@ -88,7 +88,7 @@ form.addEventListener('submit', e => {
     for (let i=0; inputs.length; i++) {
         const value = parseInt(inputs[i].value);
         if(!isNaN(value) >= min && value <=max && !userGuesses.includes(value)) {
-            userGuesses.push(valore);
+            userGuesses.push(value);
         }
     }
 
