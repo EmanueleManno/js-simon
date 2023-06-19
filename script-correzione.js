@@ -81,11 +81,11 @@ const interval = setInterval(() => {
 //METTO IN ASCOLTO IL FORM:
 form.addEventListener('submit', e => {
     e.preventDefault();
-
     //RECUPERO I VALORI:
     const userGuesses = [];
 
-    for (let i=0; inputs.length; i++) {
+    for (let i=0; i<inputs.length; i++) {
+        console.log(inputs[i]);
         const value = parseInt(inputs[i].value);
         if(!isNaN(value) >= min && value <=max && !userGuesses.includes(value)) {
             userGuesses.push(value);
